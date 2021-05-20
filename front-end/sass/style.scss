@@ -5,7 +5,7 @@ $color-secondaire: rgba(238, 66, 95, 0.555);
 body{
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 255);
+  background-color: rgba(250, 250, 250, 255);
 }
 .page-container{
   display: block;
@@ -17,14 +17,15 @@ body{
   box-sizing: border-box;
 }
 .bloc, main, .bloc .container, .section-form, .section-form .container{
-  border: 5px solid red;
   margin: auto;
   width: 95%;
 }
+header{
+  background-color: rgba(100, 100, 100, .2);
+  border-radius: 1em;
+}
 .bloc .navbar{
-  background-color: red;
   width: 94%;
-  border: 3px dotted blue;
   margin: auto;
 }
 .bloc .divbtn{
@@ -32,14 +33,13 @@ body{
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  a{
-    color: #000;
-    text-decoration: none;
-  }  
+    
 } 
+a{
+  color: #000;
+  text-decoration: none;
+}
 .container .card{
-  background-color: violet;
-  border: 2px dotted orangered;
   .table{
     width: 95%;
     margin: auto;
@@ -67,9 +67,7 @@ body{
     margin: auto;
   }
 }
-main div .divbtn{
-  border: 3px solid green;
-}
+
 .card .container a{
   text-decoration: none;
 }
@@ -77,15 +75,15 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: pink;
-  margin: auto;
+  margin: 1em auto;
+  border-radius: 1em;
   height: auto;
+  background-color: rgba(139, 149, 161, 0.185);
 }
 
 /* formulaire form de panier*/
 .section-form{
   width: 85%;
-  border: green 5px double;
   .container{
     width: 100%;
     .form_1{
@@ -95,59 +93,145 @@ main{
     }
   }
 }
+/* Pour un produit selectinné */
+.bloc-produit{
+  border: 5px double gray;
+  .container{    
+    .col-sm-6{    
+      width: 70%;
+      margin: auto;      
+    }
+  }
+}
+.col-sm-6{
+  p img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .nom-produit, 
+  .prix-produit, 
+  p, a{
+    display: flex;
+    justify-content: center;
+    margin: .2em 0 .2em 0;
+    font-size: 1.1em;
+  }
+}
+.prix-produit{
+  font-weight: bold;
+  font-family: 'pangolin';
+}
+.col-sm-6 a:last-child{
+  font-size: 1em;
+  font-weight: bold;
+  color: maroon;
+}
+.col-sm-6 a:last-child:hover::before{
+  content: "Cliquez pour";
+  font-weight: bold;
+  font-size: 1em;
+  color: red;
+  margin-right: .5em;
+  align-items: left;
+  
+}
+/* formulaire pour */
 .form_1{
-  background-color: yellow;
-  border: 2px red dotted;
   .form-group{
-    width: 80%;
     margin: auto;
+    width: 80%;
     margin-bottom: 1em;
     label{
       font-size: 1.1em;
-      font-weight: bold;
       margin-right: 1em;
-      width: 25em;
+      font-weight: bold;
     }
     input{
-      width: 60%;
       justify-content: center;
-      padding: .3em 0em .3em 1em;
+      padding: .2em .2em .2em .2em;
       border: 2px solid gray;
-      border-radius: .1em;
-      font-size: 1.1em;
+      text-align: center;
+      border-radius: .2em;
+      font-size: 1em;
+      width: 20em;
     }
   }
   .divbtn{
-    display: flex;
+    display: block;
     margin: auto;
-    border: 2px double orchid;
+    margin-bottom: 1em;
     .btn{
       margin: auto;
       text-align: center;
       margin: auto;
       margin: .51em auto .5em auto;      
     }
+    input{
+      height: auto;
+      display: flex;
+      font-size: 1.3em;
+      padding: .5em 1em;
+      border-radius: 2em;
+      border: 2px solid transparent;
+      box-shadow: .2em .3em .4em solid gray;
+      margin: auto;
+      background: -webkit-linear-gradient(0deg, $color-primaire 5%, $color-secondaire 100%);
+      background: -moz-linear-gradient(0deg, $color-primaire 5%, $color-secondaire 100%);
+      background: -o-linear-gradient(0deg, $color-primaire 5%, $color-secondaire 100%);
+      background: linear-gradient(0deg, $color-primaire 5%, $color-secondaire 100%);
+  
+    }
   }
   .form-group:first-child{
     margin-top: .5em;
   }
 }
-/*button with backgcolor */
-main .divbtn{
-  display: flex;
-  margin: auto;
-  border: 3px chartreuse solid;
+/* section page produit : quantité */
+.quantity{
+  display: block;
+  margin: 1em auto;
   
-  .valid{
-    display: block;
-    flex-direction: row;
-    text-align: center;
-    margin: 0;
-    background-color: red;
-  
-    
+  .form_2{
+    margin: auto;
+    .form-group{
+      margin: auto;
+      text-align: center;
+      
+      label{
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      input{
+        width: 4em;
+        font-weight: bold;
+        text-align: center;
+        border-radius: .51em;
+        padding: .3em 0.2em;
+      }
+    }
   }
-  
+}
+/*button with backgcolor */
+main{
+  padding-bottom: 1em;
+  .divbtn{
+    display: flex;
+    margin: auto; 
+    .valid{
+      display: block;
+      flex-direction: row;
+      text-align: center;
+      margin: 0;
+    }        
+  }  
+}
+
+.produit{
+  height: auto;
+  .divbtn{
+    margin-bottom: 1em;
+  }
+
 }
 .page-container main .btn{
   text-align: center;
@@ -189,11 +273,11 @@ h2{
   margin: auto;
   height: auto;
   .col-sm-6{
-    border: 2px solid black;
     width: 45%;
     height: auto;
     margin: auto;
     margin-bottom: 2em;
+    border: none;
     border-radius: .5em;
     img{
       width: 100%;
@@ -201,12 +285,12 @@ h2{
       margin: -0.1em -0.1em -0.1em -0.1em;
       object-fit: cover;
       border-radius: .5em;
-      border: 2px solid transparent;
     }
-    h3, .description, .text-center{
+
+    .nom-produit, .prix-produit{
       text-align: center;
-      border: 1px solid gray;
       margin: .2em 0 .2em 0;
+      border: none;
     }
   }
 }
@@ -218,7 +302,6 @@ h2{
   width: 100%;
   height: 7em;
   padding: 0.5em 0.5em;
-  background-color: yellow;
   margin: auto;
 }
 
@@ -230,7 +313,6 @@ h2{
   display: inline-block;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid black;
   font-family: 'Pangolin', sans-serif;
   img {    
     margin: .3em .5em .5em 1em;
@@ -238,7 +320,6 @@ h2{
     object-fit: cover;
     display: inline-block;
     width: 20%;
-    border: 2px dotted orangered;
   }
   span{
     position: absolute;
@@ -249,25 +330,19 @@ h2{
     font-size: 3em;  
     margin-left: 2%;  
     font-family: 'Pangolin', sans-serif;
-    border: 2px solid black;
   }  
 }
-
 
 .navbar-collapse{
   display: inline-block;
   padding: 0;
   width: 50%;
 }
-
 .navbar-nav{
   display: inline-block;
   flex-direction: row;
   margin-right: 1em; 
-  border: 2px dotted red;
-  background-color: yellow;
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
 
 .navbar .nav {
@@ -279,12 +354,16 @@ h2{
 }
 .nav > li {
   float: left;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-right: 0.5em;
   border-radius: 2em;
   padding: .3em 1em;
-  background-color: rgba(190, 190, 190, 0.51);
+  background-color: rgba(241, 237, 237, 0.51);
   border: 2px solid rgba(196, 191, 191, 1);    
+}
+.nav > li:hover{
+  border: 2px solid rgba(64, 92, 134, 1);
+  box-shadow: 1px 2px 2px gray;
 }
 .navbar-nav .open .dropdown-menu > li > a {
   text-align: inherit;
@@ -299,6 +378,7 @@ h2{
   }
   a .fas{
     margin-right: .2em;
+    font-size: .81em;
   }
 }
 .nav-item:hover{
@@ -329,118 +409,22 @@ h2{
 }
 
 
-/* Effet sur img bloc-4 forfolio agrandi sur bouton defil left right*/
-a[data-lightbox] {
-  position: relative;
-  display: block;
-  text-align: center;
-}
-a[data-lightbox]:hover::before {
-  content: "+";
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-  font-size: 32px;
-  width: 50px;
-  height: 50px;
-  //margin-left: -25px;
-  margin-left: 50%;
-  margin-right: 50%;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, .6);
-  color: #FFF;
-  font-weight: 100;
-  z-index: 1;
-  position: absolute;
-  top: 50%;
-  justify-content: center;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-}
-a[data-lightbox]:hover img {
-  opacity: 0.6;
-  -webkit-animation-fill-mode: none;
-  animation-fill-mode: none;
-}
-#lightbox-modal {
-  display: flex;
-  align-items: center;
-}
-#lightbox-modal .modal-dialog {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto 0;
-}
-#lightbox-modal .modal-dialog img {
-  max-height: 90vh;
-  margin: 0 auto;
-}
-.lightbox-caption {
-  padding: 20px;
-  color: #FFF;
-  background: rgba(0, 0, 0, .5);
-  position: absolute;
-  left: 15px;
-  right: 15px;
-  bottom: 5px;
-}
-.close-lightbox {
-  color: #FFF;
-  font-size: 30px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 20;
-  background: rgba(0, 0, 0, .5);
-  border: none;
-  line-height: 30px;
-  padding: 0 9px 5px;
-  opacity: 0.3;
-}
-.close-lightbox:hover,
-.next-lightbox:hover,
-.prev-lightbox:hover {
-  opacity: 1.0;
-  color: #FFF;
-}
-.next-lightbox,
-.prev-lightbox {
-  font-size: 20px;
-  color: rgba(255, 255, 255, .9);
-  background: rgba(0, 0, 0, .5);
-  transition: all .2s ease-in-out;
-  position: absolute;
-  top: 45%;
-  z-index: 1;
-  opacity: 0.4;
-}
-.next-lightbox {
-  padding: 6px 8px 1px 13px;
-  right: 25px;
-}
-.prev-lightbox {
-  padding: 6px 13px 1px 10px;
-  left: 25px;
-}
-.snapshot-lb .modal-body {
-  padding-bottom: 45px;
-}
-.snapshot-lb .lightbox-caption {
-  padding: 0;
-  color: rgba(0, 0, 0, .5);
-  background: none;
-}
 footer{
+  background-color: rgba(49, 19, 19, 0.2);
   .social{
     width: 90%;
-    margin: auto;
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.1em;
+    .col-sm-3{
+      margin: auto;
+    }
     a{
       color: rgba(0, 0, 0, .7);
       font-weight: bold;
       text-decoration: none;
+      font-size: 1.2em;
       padding: 0.2em 0.8em;
     }
     a:hover{

@@ -13,10 +13,11 @@
 	<style>
 		@import url('http://fonts.cdnfonts.com/css/pangolin');
 	</style>	
-	<script src="../src/produit.js" defer></script>	
+	<script src="src/produit.js" defer></script>	
 
 </head>
-<body id="produit">
+<body>
+
 	<!-- Principal conteneur -->
 	<div class="page-container">
 		<!-- bloc-0 -->
@@ -39,28 +40,36 @@
 				</nav>	
 		</header>
 		<!-- EN-TETE END -->	
-		<main>				
+		<main id="produit" class="produit">				
 			<!-- Lister mes produits-->
 			<h1>
 				Orinoco, choix de mon produit en ligne
 			</h1>
-			<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+			<section class="bloc bloc-produit" id="bloc-4-portfolio">
 				<h2>Le Produit</h2>
-				<div class="container">				
-						
-						
+				<div class="container">
+					<div class="col-sm-6"  >						
+						<p class="image"><img src="images/teddy_1.jpg" alt="" class=""/></p>
+						<h3 class="nom-produit">
+							Nom de la photo
+						</h3>						
+						<p class="prix-produit">
+							390,99 €
+						</p>
+						<p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum tempore voluptates voluptatem nam ab alias rerum, beatae cupiditate voluptas praesentium aliquam enim molestiae ut natus cum ratione quaerat nesciunt!</p>
+					</div>						
 				</div>
                 <div class="quantity">
-                    <form method="post" action="#" id="form_1" class="form_1">
+                    <form method="post" action="#" id="form_2" class="form_2">
                         <div class="form-group">
-                            <label for="number">Quantité</label>
-                            <input type="number" id="number" min="0" placeholder="Nombre de 0 à max" class="form-control" required />
+                            <label for="number" id="number">Quantité:</label>
+                            <input type="number" id="number" min="1" max="50" placeholder="0 à..." class="form-control" required />
                         </div>
                     </form>
                 </div>
 			</section>
 			<!-- Liste de mes produits END -->
-            <section class="bloc">
+            <section class="bloc ">
                 <h2>Faites votre choix</h2>
                 <div class="container divbtn">
                     <div class="btn"><span>Ajouter au panier</span></div>
