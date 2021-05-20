@@ -1,0 +1,702 @@
+@charset "UTF-8";
+/* DESKTOP and sup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.page-container {
+  display: block;
+  height: auto;
+  margin: auto;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+  top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bloc, main, .bloc .container, .section-form, .section-form .container {
+  border: 5px solid red;
+  margin: auto;
+  width: 95%;
+}
+
+.bloc .navbar {
+  background-color: red;
+  width: 94%;
+  border: 3px dotted blue;
+  margin: auto;
+}
+
+.bloc .divbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+.bloc .divbtn a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container .card {
+  background-color: violet;
+  border: 2px dotted orangered;
+}
+
+.container .card .table {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+}
+
+.container .card .table tr th {
+  border: 2px solid black;
+  font-size: 1.1em;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .card h2 {
+  text-align: left;
+  margin-left: 4em;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.card .container {
+  width: 80%;
+}
+
+.card .container .divbtn {
+  display: block;
+  margin: auto;
+}
+
+main div .divbtn {
+  border: 3px solid green;
+}
+
+.card .container a {
+  text-decoration: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: pink;
+  margin: auto;
+  height: auto;
+}
+
+/* formulaire form de panier*/
+.section-form {
+  width: 85%;
+  border: green 5px double;
+}
+
+.section-form .container {
+  width: 100%;
+}
+
+.section-form .container .form_1 {
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+
+.form_1 {
+  background-color: yellow;
+  border: 2px red dotted;
+}
+
+.form_1 .form-group {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.form_1 .form-group label {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-right: 1em;
+  width: 25em;
+}
+
+.form_1 .form-group input {
+  width: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .3em 0em .3em 1em;
+  border: 2px solid gray;
+  border-radius: .1em;
+  font-size: 1.1em;
+}
+
+.form_1 .divbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border: 2px double orchid;
+}
+
+.form_1 .divbtn .btn {
+  margin: auto;
+  text-align: center;
+  margin: auto;
+  margin: .51em auto .5em auto;
+}
+
+.form_1 .form-group:first-child {
+  margin-top: .5em;
+}
+
+/*button with backgcolor */
+main .divbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border: 3px chartreuse solid;
+}
+
+main .divbtn .valid {
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  margin: 0;
+  background-color: red;
+}
+
+.page-container main .btn {
+  text-align: center;
+  padding: .4em 0.7em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: .5em;
+  margin-bottom: .51em;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #b492df), to(rgba(238, 66, 95, 0.555)));
+  background: linear-gradient(0deg, #b492df 5%, rgba(238, 66, 95, 0.555) 100%);
+}
+
+.page-container main button:hover,
+.page-container main .btn:hover {
+  cursor: pointer;
+  color: #000;
+  opacity: .6;
+}
+
+h1 {
+  text-align: center;
+  width: 90%;
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* La section concernant les images des produits*/
+.bloc .container .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: auto;
+}
+
+.bloc .container .row .col-sm-6 {
+  border: 2px solid black;
+  width: 45%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: .5em;
+}
+
+.bloc .container .row .col-sm-6 img {
+  width: 100%;
+  height: 20em;
+  margin: -0.1em -0.1em -0.1em -0.1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .5em;
+  border: 2px solid transparent;
+}
+
+.bloc .container .row .col-sm-6 h3, .bloc .container .row .col-sm-6 .description, .bloc .container .row .col-sm-6 .text-center {
+  text-align: center;
+  border: 1px solid gray;
+  margin: .2em 0 .2em 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 7em;
+  padding: 0.5em 0.5em;
+  background-color: yellow;
+  margin: auto;
+}
+
+.navbar-header {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  font-family: 'Pangolin', sans-serif;
+}
+
+.navbar-header img {
+  margin: .3em .5em .5em 1em;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  width: 20%;
+  border: 2px dotted orangered;
+}
+
+.navbar-header span {
+  position: absolute;
+  margin-top: 0.5em;
+  display: inline;
+  width: 20%;
+  text-align: center;
+  font-size: 3em;
+  margin-left: 2%;
+  font-family: 'Pangolin', sans-serif;
+  border: 2px solid black;
+}
+
+.navbar-collapse {
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+}
+
+.navbar-nav {
+  display: inline-block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 1em;
+  border: 2px dotted red;
+  background-color: yellow;
+  list-style-type: none;
+}
+
+.navbar .nav {
+  padding-top: 2px;
+  margin-right: 16px;
+  float: right;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.nav > li {
+  float: left;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  border-radius: 2em;
+  padding: .3em 1em;
+  background-color: rgba(190, 190, 190, 0.51);
+  border: 2px solid #c4bfbf;
+}
+
+.navbar-nav .open .dropdown-menu > li > a {
+  text-align: inherit;
+}
+
+.nav-item {
+  background-color: rgba(190, 190, 190, 0.71);
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000;
+}
+
+.nav-item a .fas {
+  margin-right: .2em;
+}
+
+.nav-item:hover {
+  background-color: rgba(190, 190, 190, 0.41);
+}
+
+.nav > li a:hover,
+.nav > li a:focus {
+  opacity: 0.7;
+}
+
+.navbar-toggle:hover {
+  background: gray !important;
+}
+
+.navbar-toggle {
+  background-color: rgba(0, 0, 0, 0.41);
+  margin-left: -1em;
+  width: 2.5em;
+  height: 2em;
+}
+
+.nav-invert .navbar .nav {
+  float: left;
+}
+
+.nav-invert .navbar-header,
+.nav-invert .navbar-brand {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+
+/* Effet sur img bloc-4 forfolio agrandi sur bouton defil left right*/
+a[data-lightbox] {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+a[data-lightbox]:hover::before {
+  content: "+";
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+  margin-right: 50%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  font-weight: 100;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+a[data-lightbox]:hover img {
+  opacity: 0.6;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+}
+
+#lightbox-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#lightbox-modal .modal-dialog {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 0;
+}
+
+#lightbox-modal .modal-dialog img {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+.lightbox-caption {
+  padding: 20px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 5px;
+}
+
+.close-lightbox {
+  color: #FFF;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  line-height: 30px;
+  padding: 0 9px 5px;
+  opacity: 0.3;
+}
+
+.close-lightbox:hover,
+.next-lightbox:hover,
+.prev-lightbox:hover {
+  opacity: 1.0;
+  color: #FFF;
+}
+
+.next-lightbox,
+.prev-lightbox {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.next-lightbox {
+  padding: 6px 8px 1px 13px;
+  right: 25px;
+}
+
+.prev-lightbox {
+  padding: 6px 13px 1px 10px;
+  left: 25px;
+}
+
+.snapshot-lb .modal-body {
+  padding-bottom: 45px;
+}
+
+.snapshot-lb .lightbox-caption {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  background: none;
+}
+
+footer .social {
+  width: 90%;
+  margin: auto;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.1em;
+}
+
+footer .social a {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.2em 0.8em;
+}
+
+footer .social a:hover {
+  color: black;
+  background-color: gainsboro;
+  border-radius: .71em;
+}
+
+/*  TABLETTE de 600px à 1024px */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  body {
+    margin: 0px;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page-container {
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 1024px;
+  }
+  /* La section concernant les images des produits*/
+  .bloc .container .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    height: auto;
+  }
+  .bloc .container .row .col-sm-6 {
+    border: 2px solid black;
+    width: 45%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: .5em;
+  }
+  .bloc .container .row .col-sm-6 img {
+    width: 100%;
+    height: 16em;
+    margin: auto;
+    margin: -0.1em -0.1em -0.1em -0.1em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: .5em;
+    border: 2px solid transparent;
+  }
+  .bloc .container .row .col-sm-6 h3, .bloc .container .row .col-sm-6 .description, .bloc .container .row .col-sm-6 .text-center {
+    text-align: center;
+    border: 1px solid gray;
+    margin: .2em 0 .2em 0;
+  }
+}
+
+/* Les mobiles */
+@media screen and (max-width: 599px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .page-container {
+    min-width: 320px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fff;
+  }
+  /* La section concernant les images des produits*/
+  .bloc .container .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    height: auto;
+  }
+  .bloc .container .row .col-sm-6 {
+    border: 2px solid black;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1.5em;
+    border-radius: .5em;
+  }
+  .bloc .container .row .col-sm-6 img {
+    width: 100%;
+    height: 15em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: .5em;
+    border: 2px solid transparent;
+  }
+  .bloc .container .row .col-sm-6 h3, .bloc .container .row .col-sm-6 .description, .bloc .container .row .col-sm-6 .text-center {
+    text-align: center;
+    border: 1px solid gray;
+    margin: .2em 0 .2em 0;
+  }
+}
+
+/* orientation paysage et portrait sur petits écrans */
+@media (orientation: landscape) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .page-container {
+    margin: auto;
+  }
+}
+
+/* orientation portrait sur mobile */
+@media (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+  .page-container {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
