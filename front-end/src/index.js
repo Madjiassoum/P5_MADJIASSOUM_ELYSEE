@@ -1,3 +1,1 @@
-<script>
-   const monId= document.getElementByTagName();
-</script>
+fetch(http://localhost:3000/api/teddies/);
