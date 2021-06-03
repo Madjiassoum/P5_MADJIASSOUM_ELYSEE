@@ -13,7 +13,7 @@
 	<style>
 		@import url('http://fonts.cdnfonts.com/css/pangolin');
 	</style>	
-	<script type="text/javascript" src="src/produit.js" defer></script>	
+	<script type="text/javascript" src="../src/produit.js" defer></script>	
 
 </head>
 <body>
@@ -43,40 +43,49 @@
 		<main id="produit" class="produit">				
 			<!-- Lister mes produits-->
 			<h1>
-				Orinoco, choix de mon produit en ligne
+				Orinoco, site de vente d'Ours en peluche faits à la main en ligne
+	
 			</h1>
-			<section class="bloc bloc-produit" id="bloc-4-portfolio">
-				<h2>Le Produit</h2>
-				<div class="container">
-					<div class="col-sm-6"  >						
-						<p class="image"><img src="images/teddy_1.jpg" alt="" class=""/></p>
-						<h3 class="nom-produit">
-							Nom de la photo
-						</h3>						
-						<p class="price">
-							390,99 €
-						</p>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>						
+			  
+			<div class="bloc bloc-produit" id="bloc-4-portfolio">
+				<h2>Le Produit sélectionné</h2>
+				<div id="produit-seul" class="produit-seul container">
+					<!--
+					<div id="" class="col-sm-6">
+						<img src="" class="" alt=""/>
+						<h3 class="name"></h3>
+						<div class="color-product">
+                            <label for="coulors">Couleur</label>
+                            <select name="coulors" id="coulor3">
+                                
+                            </select>
+                        </div>						
+						<p class="price"></p>
+						<p class="description"></p>
+					
+					</div>	
+					-->			
 				</div>
+				
                 <div class="quantity">
                     <form method="post" action="#" id="form_2" class="form_2">
                         <div class="form-group">
                             <label for="number" id="number">Quantité:</label>
-                            <input type="number" id="number" min="1" max="50" placeholder="0 à..." class="form-control" required />
+                            <input type="number" id="number" min="1" max="50" placeholder="1 à..." class="form-control" required />
                         </div>
                     </form>
-                </div>
-			</section>
+                </div>			
+			</div>
+		
 			<!-- Liste de mes produits END -->
-            <section class="bloc ">
+            <div class="bloc ">
                 <h2>Faites votre choix</h2>
                 <div class="container divbtn">
-                    <div class="btn"><span>Ajouter au panier</span></div>
-                    <div class="btn"><a href="panier.html">Voir le panier</a></div>
-                    <div class="btn"><a href="index.html">Retour à l'accueil</a></div>
+                    <div class="btn ajout"><span>Ajouter au panier</span></div>
+                    <div class="btn"><a href="panier.html" class="btn-3">Voir mon panier</a></div>
+                    <div class="btn"><a href="index.html" class="btn-3">Retour à l'accueil</a></div>
                 </div>
-            </section>
+            </div>
 		</main>
 		<!-- Footer DEBUT -->
 		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">

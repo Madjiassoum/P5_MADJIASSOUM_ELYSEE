@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" href="fontawesome-free-5.14.0-web/css/all.css">
 	<style>
 		@import url('http://fonts.cdnfonts.com/css/pangolin');
-	</style>
-	<script type="text/javascript" src="src/index.js" defer></script>
+	</style>	
+	<script type="text/javascript" src="../src/index.js" defer></script>
 </head>
 <body>
 	<!-- Principal conteneur -->
@@ -31,94 +31,24 @@
 								<a href="index.html" class="nav-link">Accueil</a>
 							</li>	                        				
 							<li class="nav-item active menu__item">
-								<a class="nav-link" href="panier.html"><i class="fas fa-shopping-basket"></i>Panier</a>
+								<a class="nav-link cartCount" href="panier.html"><i class="fas fa-shopping-basket"></i>Panier</a>
 							</li>							
 						</ul>
 					</div>
 				</nav>	
 		</header>
 		<!-- EN-TETE END -->	
-		<main id="index" class="index">				
-			<!-- Lister mes produits-->
+		
+		<main id="index" class="index">			
 			<h1>
 				Orinoco, site de vente d'Ours en peluche faits à la main en ligne
 			</h1>
-			<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
-				<h2>Liste des produits</h2>
-				<div class="container">				
-					<div id="5be9c8541c9d440000665243" class="col-sm-6">
-						<p><img src="images/teddy_1.jpg" alt="" class=""/></p>
-						<h3 class="name">Norbert</h3>	
-						<div class="color-product">
-                            <label for="colors">Couleur</label>
-                            <select name="colors" id="color1">
-                                <option value="1">Tan</option>
-                                <option value="2">Chocolate</option>
-                                <option value="3">Black</option>
-                                <option value="4">white</option>                
-                            </select>
-                        </div>					
-						<p class="price">2900 €</p>							
-						<a href="http://localhost:3000/api/teddies/5be9c8541c9d440000665243">Plus de détail</a>
-					</div>
-					<div id="5beaa8bf1c9d440000a57d94" class="col-sm-6">
-						<p><img src="images/teddy_2.jpg" class="" alt=""/></p>							
-						<h3 class="name">Arnold</h3>
-						<div class="color-product">
-                            <label for="coulors">Couleur</label>
-                            <select name="coulors" id="coulor2">
-                                <option value="1">Pale brown</option>
-                                <option value="2">Dark brown</option>
-                                <option value="3">White</option>
-                            </select>
-                        </div>						
-						<p class="price">3900 €</p>							
-						<a href="http://localhost:3000/api/teddies/5beaa8bf1c9d440000a57d94">Plus de détail</a>
-					</div>				
-					<div id="5beaaa8f1c9d440000a57d95" class="col-sm-6">
-						<p><img src="images/teddy_3.jpg" class="" alt=""/></p>
-						<h3 class="name">Lenny and Carl</h3>
-						<div class="color-product">
-                            <label for="coulors">Couleur</label>
-                            <select name="coulors" id="coulor3">
-                                <option value="1">Brown</option>
-                            </select>
-                        </div>						
-						<p class="price">5900 €</p>
-						<a href="http://localhost:3000/api/teddies/5beaaa8f1c9d440000a57d95">Plus de détail</a>
-					</div>
-					<div id="5beaabe91c9d440000a57d96" class="col-sm-6">
-						<p><img src="images/teddy_4.jpg" class="" alt=""/></p>
-						<h3 class="name">Gustav</h3>	
-						<div class="color-product">
-                            <label for="coulors">Couleur</label>
-                            <select name="coulors" id="coulor4">
-                                <option value="1">Brown</option>
-                                <option value="2">Blue</option>
-                                <option value="3">Pink</option>                                
-							</select>
-                        </div>					
-						<p class="price">4500 €</p>						
-						<a href="http://localhost:3000/api/teddies/5beaabe91c9d440000a57d96">Plus de détail</a>
-					</div>
-					<div id="5beaacd41c9d440000a57d97" class="col-sm-6">
-						<p><img src="images/teddy_5.jpg" class="" alt=""/></p>
-						<h3 class="name">Garfunkel</h3>
-						<div class="color-product">
-                            <label for="coulors">Couleur</label>
-                            <select name="coulors" id="Coulor5">
-                                <option value="1">Beige</option>
-                                <option value="2">Tan</option>
-                                <option value="3">Chocolate</option>                                
-                            </select>
-                        </div>
-						<p class="price">5500 €</p>
-						<a href="produit.html">Plus de détail</a>
-					</div>					
-				</div>
-			</section>
-			<!-- Liste de mes produits END -->
+			<div class="bloc" id="produit-liste">			
+				<div id="products" class="container">
+				</div>				
+			</div>			
 		</main>
+	
 		<!-- Footer DEBUT -->
 		<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 			<div class="container bloc-sm row">
