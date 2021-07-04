@@ -1,60 +1,47 @@
-const btnAjout = document.querySelector('.ajout');
-btnAjout.addEventListener('click', () =>{
-    alert('Bien ajouté au panier')
-})
+alert("bienvenue les amis");
+//Recup chaine de requete dans l'url
+let queryString_url_id = document.location.search;
+console.log(queryString_url_id);
 
+//Extraction de l'id par la methode 2
+let urlSearchParams = new URLSearchParams(queryString_url_id);
+console.log(urlSearchParams);
 
-
-//* récupération de l'id produit dans l'url avec la méthode URLSearchParams----------
-/*
-let urlSearchParams = new URLSearchParams(document.location.search)
+// Valeur de l'id
 let id = urlSearchParams.get("id")
-let URL = "http://localhost:3000/api/teddies/"
+console.log(id);
 
-//* Affichage produit dans la page--------------------------------------------------
-let request = new XMLHttpRequest()
-request.onreadystatechange = function () {
-    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-        teddy = JSON.parse(this.responseText)
-        affichageProduit()
-    }
-}
-//* initialisation de la requête-------------------------------------------------
-request.open("GET", URL + '/' + id)
-//* envoi de la requête----------------------------------------------------------
-request.send()
+//application de la methode Fetch
+const URL = "http://localhost:3000/api/teddies";
 
-//* affichage du produit---------------------------------------------------------
-function affichageProduit() {
-
-    //* Ciblage des données stockées-----------------------------------------------
-    let titre = document.getElementById("name")
-    let prix = document.getElementById("price")
-    let description = document.getElementById("description")
-    let image = document.getElementById("image")
+document.addEventListener("DOMContentLoaded", () => {
+  const produitSeul = document.getElementById("produit");
+  if (produitSeul) {
+    fetch(URL)
+      .then((res) => res.json())
+      .then((response) => afficherProduit(response));
+  }
 
 
-    //*  Affichage des données--------------------------------------------------------
-    titre.textContent = teddy.name
-    prix.textContent = teddy.price / 100 + " €"
-    description.textContent = teddy.description
-    image.src = teddy.imageUrl
-
-
-    //* Création des choix couleur------------------------------------------------
-    let produitCouleur = document.getElementById("colors")
-    let options = teddy.lenses
-    options.forEach(function (element, color) {
-        produitCouleur[color] = new Option(element, element)
-    })
-
-    //* sélection de couleur
-    let selectionColor = document.getElementById("colors").addEventListener("change", function (e) {
-        selectionColor = e.target.value;
-    })
-
-    //* sélection de la quantité---------------------------------------------------
-    let quantiteProduit = document.getElementById("quantiteProduit").addEventListener('change', function (e) {
-        quantiteProduit = e.target.value
-    })
-    */
+  
+  function afficherProduit(produit){
+    
+    produitSeul.innerHTML = `
+    <div id="produit" class="produit">
+				<p class="photo" id="photo"><img src="" alt="" ></p>                   
+				<h2 class="titre" id="titre">je syus là</h2>
+				<div class=" col-lg-4">
+					<label for="lense-select">Couleurs </label>
+					<select name="lenses" id="lense-select" class="mb-2"></select>
+				</div>
+				<div class="selectCouleur" id="selectCouleur">
+					<label for="couleur-choisie">couleur</label>
+					<select id="couleur-choisie" name="couleurs" id="couleur-choisie"></select>
+				</div>				
+				<p class="price" id="price"></p>
+				<p class="description" id="description">lorem</p>					
+			</div>
+    `;
+  }
+});
+request.open("GET", url + '/' + id)

@@ -1,1 +1,1 @@
-https://madjiassoum.github.io/P5_MADJIASSOUM_ELYSEE/front-end/pages/index.html
+https://madjiassoum.github.io/P5_MADJIASSOUM_ELYSEE/index.html
