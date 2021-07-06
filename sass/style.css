@@ -145,7 +145,7 @@ header {
 }
 
 .produit-seul .produit .photo {
-  width: 100%;
+  width: 70%;
   margin: 0;
   text-align: center;
 }
@@ -154,7 +154,7 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   padding: 0em 0em;
-  width: 100%;
+  width: 10em;
   height: 17em;
   margin: 0 -1em -.5em -1em;
 }
@@ -178,6 +178,11 @@ header {
   margin: 1em .5em .1em .5em;
   border: .5em solid blue;
   font-family: 'Pangolin', sans-serif;
+}
+
+.produit-seul .produit .selectCouleur {
+  border: .2em double green;
+  text-align: center;
 }
 
 .produit-seul .quantity {

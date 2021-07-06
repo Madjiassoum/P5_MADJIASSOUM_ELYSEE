@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="description">${produit.description}</p>                
                 <p class="ahref">
                     <a href="./pages/produit.html?id=${produit._id}" class="button">Voir ce produit</a>                     
-                </p>
-            
+                </p>            
         </div>
         `;
       }

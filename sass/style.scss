@@ -103,7 +103,7 @@ header{
 }
 
 .produit-seul{
-  border: .1em solid rgb(205, 205, 206);
+  border: 1em solid rgb(10, 10, 223);
   width: 90%;  
   .produit{
     display: flex;
@@ -112,15 +112,15 @@ header{
     padding: .1em;
     margin: auto;
     .photo{
-      width: 100%;
+      width: 70%;
       margin: 0;
       text-align: center;      
       img{
         object-fit: cover;
         padding: 0em 0em;
-        width: 100%;
-        height: 17em;
-        margin: 0 -1em -.5em -1em;
+        width: 7%;
+        height: 10em;
+        margin: 0em -1em -.5em -1em;
       }
     }    
     .description{
@@ -142,6 +142,7 @@ header{
       font-family: 'Pangolin', sans-serif;
     }
   }
+  
   .quantity{
     border: 2px solid rgb(128, 86, 9);
     text-align: center;
