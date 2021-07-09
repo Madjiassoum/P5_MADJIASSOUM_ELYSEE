@@ -40,23 +40,23 @@
 			<!-- Lister mes produits-->
 			<h1>
 				Orinoco, ours en peluche faits à la main
-			</h1></div>
+			</h1>
 			<div id="produit" class="produit">			
-				<p class="photo" id="photo"><img src="" alt="" ></p>                   
+				<p class="photo" id="photo"><img src="#" alt="" ></p>                   
 				<h2 class="titre" id="titre"></h2>
-				<div class="divCouleur" id="divCouleur">
-					<label for="couleur-choisie"></label>
-					<select id="couleur-choisie" name="couleur-choisie" id="couleur-choisie"></select>
-				</div>				
+				<div class="choix_couleur">
+					<label for="choix_couleur">Couleur</label> 
+					<select class="choix_couleur" name="choix_couleur">
+					  <option></option>			
+					</select>
+				</div>								
 				<p class="price" id="price"></p>
-				<p class="description" id="description"></p>					
-			
+				<p class="description" id="description"></p>			
 			</div>
-
-
+			
 			<div class="quantity">
 				<form method="post" action="#" id="form_2" class="form_2">
-					<label for="number" id="number">Quantité:</label>
+					<label for="number">Quantité:</label>
 					<input type="number" id="number" min="1" max="50" placeholder="1 à" class="form-control" required />
 				</form>
 			</div>		

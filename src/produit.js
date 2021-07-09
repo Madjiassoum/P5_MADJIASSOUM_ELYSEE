@@ -18,16 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     produitSeul.innerHTML= `                  
         <p class="photo"><img src="${produit.imageUrl}" alt=""></p>           
         <h2 class="title">${produit.name}</h2> 
-        <label for="couleur-choisie">couleur</label> 
-        <select class="sizes" name="sizes">
-          ${produit.colors
-            .map((color) => `<option>${color}</option>`)
-            .join(", ")}
-        </select>
-        <div class="selectCouleur" id="selectCouleur">
-          <label for="couleur-choisie">couleur</label>
-          <select id="couleur-choisie" name="couleur" id="couleur-choisie">${produit.colors}</select>
-        </div>	    
+        <div class="choix_couleur">
+          <label for="choix_couleur">couleur</label> 
+          <select class="choix_couleur" name="choix_couleur">
+            ${produit.colors
+              .map((color) => `<option>${color}</option>`)
+              .join(", ")}
+          </select>
+        </div>
         <p class="price">${(produit.price) /10} €</p>               
         <p class="description">${produit.description}</p>
         `;
