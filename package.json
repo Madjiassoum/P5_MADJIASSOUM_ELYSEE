@@ -1,0 +1,19 @@
+{
+  "name": "p5_madjiassoum_elysee",
+  "version": "1.0.0",
+  "description": "https://madjiassoum.github.io/P5_MADJIASSOUM_ELYSEE/index.html",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE/issues"
+  },
+  "homepage": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE#readme"
+}
