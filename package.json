@@ -4,6 +4,7 @@
   "description": "https://madjiassoum.github.io/P5_MADJIASSOUM_ELYSEE/index.html",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./sass/style.scss:./sass/style.css"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE/issues"
   },
-  "homepage": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE#readme"
+  "homepage": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE#readme",
+  "dependencies": {
+    "sass": "^1.35.2"
+  }
 }

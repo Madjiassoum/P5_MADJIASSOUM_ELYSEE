@@ -6,24 +6,29 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((res) => res.json())
       .then((response) => {
         response.forEach((produit, index) => {
-          produitsListe.innerHTML += afficherProduits(produit, index);        
+          produitsListe.innerHTML += afficherProduits(produit, index);
         });
-        function afficherProduits(produit, index) {    
-    return `
+        function afficherProduits(produit, index) {
+          return `
         <div class="produit"}">            
-                <p class="photo"><img src="${produit.imageUrl}" alt=""></p>           
+                <p class="photo"><img src="${
+                  produit.imageUrl
+                }" alt=""></p>           
                 <h2 class="title">${produit.name}</h2>      
-                <p class="price">${(produit.price) /10} €</p>               
-                <p class="description">${produit.description}</p>                
+                <p class="price">${produit.price / 10} €</p>               
+                <p class="description">${
+                  produit.description
+                }</p>                
                 <p class="ahref">
-                    <a href="./pages/produit.html?id=${produit._id}" class="button">Voir ce produit</a>                     
+                    <a href="./pages/produit.html?id=${
+                      produit._id
+                    }" class="button">Voir ce produit</a>                     
                 </p>            
         </div>
         `;
-      }
+        }
       })
       .catch((erreur) => console.log(erreur));
   }
-  
+  console.log(produitsListe);
 });
-
