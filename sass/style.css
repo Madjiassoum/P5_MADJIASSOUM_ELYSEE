@@ -642,6 +642,7 @@ footer .row .col-sm-4 ul {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     max-width: 1024px;
+    border: 1em solid blue;
   }
   /* La section concernant les images des produits*/
   .bloc .container .row {
