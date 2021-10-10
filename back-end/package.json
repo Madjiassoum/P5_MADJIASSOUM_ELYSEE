@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "sass": "sass --watch ./sass/style.scss:./sass/style.css"
   },
   "author": "",

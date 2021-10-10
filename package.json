@@ -4,12 +4,12 @@
   "description": "https://madjiassoum.github.io/P5_MADJIASSOUM_ELYSEE/index.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "sass": "sass --watch ./sass/style.scss:./sass/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE.git"
+    "url": "git+ssh://git@github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE.git"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/Madjiassoum/P5_MADJIASSOUM_ELYSEE#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
     "sass": "^1.35.2"
-  }
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.11.3"
+  },
+  "keywords": []
 }
