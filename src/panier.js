@@ -252,16 +252,7 @@ validFormulaire.addEventListener("click", function (event) {
   //     "Content-Type": "application/json",
   //   },
   //   body: JSON.stringify(envoiPanierFormulaire),
-  //   // {
-  //   // Formulaire: {
-  //   //   nom: Formulaire.document.querySelector("#name").value,
-  //   //   prenom: Formulaire.document.querySelector("#name").value,
-  //   //   email: Formulaire.document.querySelector("#name").value,
-  //   //   adresse: Formulaire.document.querySelector("#name").value,
-  //   //   ville: Formulaire.document.querySelector("#name").value,
-  //   // },
-  //   // produit: monStockage,
-  //   // }),
+  
   // });
   // promise01.then(async(Response) =>{
 
