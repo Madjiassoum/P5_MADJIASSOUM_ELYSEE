@@ -1,4 +1,4 @@
-let URL_API_PRODUITS = "https://oc-p5-api.herokuapp.com/api/teddies";
+let URL_API_PRODUITS = "https://ocp5-api.herokuapp.com/api/teddies";
 document.addEventListener("DOMContentLoaded", () => {
   const produitsListe = document.getElementById("container-produits");
   if (produitsListe) {

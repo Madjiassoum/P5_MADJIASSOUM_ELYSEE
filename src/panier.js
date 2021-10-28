@@ -227,7 +227,7 @@ validFormulaire.addEventListener("click", function (event) {
   //   );
 
   function sendFormData(data) {
-    fetch("https://oc-p5-api.herokuapp.com/api/teddies/users", {
+    fetch("https://ocp5-api.herokuapp.com/api/teddies/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -242,34 +242,9 @@ validFormulaire.addEventListener("click", function (event) {
       .catch((error) => alert("Erreur : " + error));
   }
 
-  // //  ***** url utilisé dans fetch *****
-  // const url = "https://oc-p5-api.herokuapp.com/api/teddies";
-  // //   console.log(url);
-  // const urlPost = "https://oc-p5-api.herokuapp.com/api/teddies/users";
-  // let promise01 = fetch("https://oc-p5-api.herokuapp.com/api/teddies/users", {
-  //   method: "POST",
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify(envoiPanierFormulaire),
   
-  // });
-  // promise01.then(async(Response) =>{
-
-  // })
-  // console.log("console log de promise01");
-  // console.log(promise01);
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         return response.json();
-  //       }
-  //     })
-  //     .then((data) => {
   localStorage.setItem("Formulaire", JSON.stringify(Formulaire));
-  //     })
-  //     .catch((error) => console.log("erreur de type : ", error));
-  // }
-});
+  });
 
 //! mettre le contenu du local storage dans les champs formulaire
 /**prendre la key dans le localStorage et
