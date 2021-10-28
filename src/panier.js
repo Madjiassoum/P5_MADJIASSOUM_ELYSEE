@@ -59,31 +59,31 @@ else {
 
 
 
-// //? calcul du prix total
+  // //? calcul du prix total
 
-let totalPanierC = [];
-// aller chercher prix dans le panier
-for (let m = 0; m < monStockage.length; m++) {
-  let prixTotalArticle = monStockage[m].prixCetteQuantite;
-  totalPanierC.push(prixTotalArticle);
-  // console.log(totalPanierC);
-}
-// additionner les prix du tableau
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
-const prixTotal = totalPanierC.reduce(reducer, 0);
-// console.log(prixTotal);
+  let totalPanierC = [];
+  // aller chercher prix dans le panier
+  for (let m = 0; m < monStockage.length; m++) {
+    let prixTotalArticle = monStockage[m].prixCetteQuantite;
+    totalPanierC.push(prixTotalArticle);
+    // console.log(totalPanierC);
+  }
+  // additionner les prix du tableau
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  const prixTotal = totalPanierC.reduce(reducer, 0);
+  // console.log(prixTotal);
 
-// Le prix total du panier
-const affichePrixHtml = `
+  // Le prix total du panier
+  const affichePrixHtml = `
   <div id="totalColonne" class="totalColonne contain-totaux">
     <span class="textPT">Total à payer</span>
     <span id="insertPrixTotal" class="insertPrixTotal">${prixTotal} €</span>
   </div>
 `;
-// injection dans html
-monPanier.insertAdjacentHTML("beforeend", affichePrixHtml);
-// ! affichage du prixTotal dans le localStorage
-localStorage.setItem("prixTotal", JSON.stringify(prixTotal));
+  // injection dans html
+  monPanier.insertAdjacentHTML("beforeend", affichePrixHtml);
+  // ! affichage du prixTotal dans le localStorage
+  localStorage.setItem("prixTotal", JSON.stringify(prixTotal));
 }
 
 
@@ -202,7 +202,7 @@ validFormulaire.addEventListener("click", function (event) {
   ) {
     localStorage.setItem("Formulaire", JSON.stringify(Formulaire));
     alert("Formulaire bien rempli, et commande passée");
-     window.location.href = "confirmation.html";
+    window.location.href = "confirmation.html";
   } else {
     alert(
       "Veuillez bien remplir ce champ en rouge SVP il y a soit un format peut-être non accepté !"
@@ -216,15 +216,6 @@ validFormulaire.addEventListener("click", function (event) {
   console.log(envoiPanierFormulaire);
 
   //todo Envoi de l'objet "envoiPanierFormulaire" vers le server
-  // // let url = "https://oc-p5-api.herokuapp.com/api/teddies";
-  // function send() {
-  //   const Formulaire = new FormulaireStruc(
-  //     document.querySelector("#name").value,
-  //     document.querySelector("#prename").value,
-  //     document.querySelector("#email").value,
-  //     document.querySelector("#text").value,
-  //     document.querySelector("#city").value
-  //   );
 
   function sendFormData(data) {
     fetch("https://ocp5-api.herokuapp.com/api/teddies/users", {
@@ -242,9 +233,9 @@ validFormulaire.addEventListener("click", function (event) {
       .catch((error) => alert("Erreur : " + error));
   }
 
-  
+
   localStorage.setItem("Formulaire", JSON.stringify(Formulaire));
-  });
+});
 
 //! mettre le contenu du local storage dans les champs formulaire
 /**prendre la key dans le localStorage et
